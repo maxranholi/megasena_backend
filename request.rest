@@ -1,0 +1,9 @@
+POST http://localhost:3003/prize/create
+Content-Type: application/json
+
+{
+    "name": "quina",
+    "prize_number": 123,
+    "prize_date": "1274845",
+    "draw_Numbers": 1
+}

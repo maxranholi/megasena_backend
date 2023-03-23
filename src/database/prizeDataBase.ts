@@ -6,9 +6,9 @@ export class PrizeDataBase extends BaseDataBase {
     await BaseDataBase.connection("prize").insert({
       id: prize.id,
       name: prize.name,
-      prizeNumber: prize.prizeNumber,
-      prizeDate: prize.prizeDate,
-      drawNumbers: prize.drawNumbers
+      prize_number: prize.prizeNumber,
+      prize_date: prize.prizeDate,
+      draw_Numbers: prize.drawNumbers
     })
 
   }
