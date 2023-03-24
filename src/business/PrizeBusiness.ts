@@ -15,7 +15,7 @@ export class PrizeBusiness {
       const newPrize: Prize = {
         id,
         name,
-        prize_number: prizeNumber,
+        prizeNumber,
         prizeDate,
         drawNumbers,
       };
