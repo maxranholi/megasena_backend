@@ -23,4 +23,17 @@ export class PrizeController {
       res.status(400).send(error.message);
     }
   }
+
+  async getPrize(req: Request, res: Response) {
+    try {
+      const name: string = req.body;
+
+      const result = await prizeBusiness.getPrize(name);
+      res.status(200).send(result);
+      console.log(`controller ${name}`)
+    } catch (error) {
+      res.status(400).send(error.message);
+    }
+  }
 }
+

@@ -2,8 +2,17 @@ POST http://localhost:3003/prize/create
 Content-Type: application/json
 
 {
-    "name": "mega-sena",
-    "prizeNumber": 12345,
+    "name": "loto",
+    "prizeNumber": 34544,
     "prizeDate": "1274845",
     "drawNumbers": 1
+}
+
+
+###
+GET http://localhost:3003/prize/get
+Content-Type: application/json
+
+{
+    "name": "mega"
 }

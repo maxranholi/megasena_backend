@@ -19,12 +19,20 @@ export class PrizeBusiness {
         prizeDate,
         drawNumbers,
       };
-console.log(newPrize)
+      console.log(newPrize);
       await prizeDataBase.createPrize(newPrize);
     } catch (error) {
       return error.message;
     }
   }
+
+  async getPrize(name: string) {
+    try {
+      const result = await prizeDataBase.getPrize(name);
+      console.log(result)
+      return result;
+    } catch (error) {
+      return error.message;
+    }
+  }
 }
-
-
