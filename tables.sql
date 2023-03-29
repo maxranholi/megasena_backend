@@ -4,5 +4,5 @@ CREATE TABLE prize(
               name VARCHAR(12) NOT NULL,
               prize_number INT NOT NULL,
               prize_date VARCHAR(50) NOT NULL,
-              draw_Numbers INT NOT NULL
+              draw_Numbers VARCHAR(255) NOT NULL
 )

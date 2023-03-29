@@ -2,11 +2,12 @@ POST http://localhost:3003/prize/create
 Content-Type: application/json
 
 {
-    "name": "loto",
-    "prizeNumber": 34544,
-    "prizeDate": "1274845",
-    "drawNumbers": 1
+    "name": "DIA DE SORTE",
+    "prizeNumber": 171,
+    "prizeDate": "2019-07-04T00:00:00-03:00",
+    "drawNumbers": "03, 07, 11, 18, 20, 23, 29"
 }
+
 
 
 ###
@@ -14,5 +15,5 @@ GET http://localhost:3003/prize/get
 Content-Type: application/json
 
 {
-    "name": "mega"
+    "name": "DIA DE SORTE"
 }

@@ -30,7 +30,6 @@ export class PrizeController {
 
       const result = await prizeBusiness.getPrize(name);
       res.status(200).send(result);
-      console.log(`controller ${name}`)
     } catch (error) {
       res.status(400).send(error.message);
     }
